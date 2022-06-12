@@ -4,6 +4,7 @@ ExternalSecure: true
 
 DefaultInstance:
   InstanceName: <INSTANCE>
+  CustomDomain: <INSTANCE>.<DOMAIN>
   DefaultLanguage: en
   Org:
     Name: <ORG>
@@ -22,18 +23,18 @@ DefaultInstance:
 
 Database:
   Host: <DB_HOST>
-  Port: <DB_PORT>
-  Database: zitadel
-  MaxOpenConns: 20
-  MaxConnLifetime: 30m
-  MaxConnIdleTime: 30m
-  Options: <DB_OPTS>
-  User:
-    Username: zitadel
-    Password: <DB_PASS>
-    SSL:
-      Mode: verify-full
-      RootCert: /.zitadel/auth-ca.crt
+#  Port: <DB_PORT>
+#  Database: zitadel
+#  MaxOpenConns: 20
+#  MaxConnLifetime: 30m
+#  MaxConnIdleTime: 30m
+#  Options: <DB_OPTS>
+#  User:
+#    Username: zitadel
+#    Password: <DB_PASS>
+#    SSL:
+#      Mode: verify-full
+#      RootCert: /.zitadel/auth-ca.crt
 
 AdminUser:
   Username: zitadel
